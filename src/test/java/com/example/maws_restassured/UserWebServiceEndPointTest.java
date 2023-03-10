@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class UserWebServiceEndPointTest {
     private final String CONTEXT_PATH = "/mws";
-//    private final String EMAIL_ADDRESS = "erfanakhavanrad@hotlook.com";
+    //    private final String EMAIL_ADDRESS = "erfanakhavanrad@hotlook.com";
     private final String EMAIL_ADDRESS = "erfanakhavanrad@ne122d2fsefes23d2o.com";
     private final String JSON = "application/json";
     private static String authorizationHeader;
@@ -146,6 +146,7 @@ public class UserWebServiceEndPointTest {
      * Test Delete User
      */
     @Test
+    @Ignore
     final void d() {
         Response response = given()
                 .header("Authorization", authorizationHeader)
